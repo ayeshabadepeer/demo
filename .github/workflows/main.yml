@@ -1,0 +1,6 @@
+name:First WorkFlow
+
+on:
+ push
+jobs:
+ echo-statement:
