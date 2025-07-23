@@ -1,6 +1,19 @@
-name:First WorkFlow
+
+name: First WorkFlow
 
 on:
  push
 jobs:
  echo-statement:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Echo
+      run: echo "welcome to first workflow"
+ display-info:
+    runs-on: windows-latest
+    steps:
+       - name: Echo
+         run: echo "welcome to first window workflow"
+         
+    
+     
