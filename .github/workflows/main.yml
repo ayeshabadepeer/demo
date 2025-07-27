@@ -11,10 +11,10 @@ jobs:
       run: echo "welcome to first workflow"
  display:
    needs: build
-    runs-on: windows-latest
-    steps:
-       - name: Echo
-         run: echo "welcome to first window workflow"
+   runs-on: windows-latest
+   steps:
+      - name: Echo
+        run: echo "welcome to first window workflow"
          
     
      
