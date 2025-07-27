@@ -4,12 +4,13 @@ name: First WorkFlow
 on:
  push
 jobs:
- echo-statement:
+ build:
    runs-on: ubuntu-latest
    steps:
     - name: Echo
       run: echo "welcome to first workflow"
- display-info:
+ display:
+   needs: build
     runs-on: windows-latest
     steps:
        - name: Echo
