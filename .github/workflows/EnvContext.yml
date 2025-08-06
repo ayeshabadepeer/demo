@@ -20,6 +20,7 @@ jobs:
       echo 'Run detail value ${{github.run_id}}'
       echo 'runner number ${{github.run_number}}'
       echo 'env value is ${{env.MY_VAR}}'
+      echo 'scret is ${{secrets.USERNAME}}'
       echo 'env value is ${{vars.MY_VAR}}'
       
    
