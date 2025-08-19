@@ -8,4 +8,4 @@ jobs:
   steps:
    - id: greeting
      run: echo "message=hello welcome" >> $GITHUB_OUTPUT
-   - run: echo "output value is ${{steps.greeting.outpts.message}}"
+   - run: echo "output value is ${{steps.greeting.outputs.message}}"
