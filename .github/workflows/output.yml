@@ -6,6 +6,6 @@ jobs:
  example:
   runs-on: ubuntu-latest
   steps:
-   - id:greeting
+   - id: greeting
      run: echo "message=hello welcome" >> $GITHUB_OUTPUT
    - run: echo "output value is ${{steps.greeting.outpts.message}}"
