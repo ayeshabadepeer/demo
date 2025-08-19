@@ -1,0 +1,11 @@
+name : output context 
+
+on: 
+ workflow_dispatch
+jobs:
+ example:
+  runs-on: ubuntu-latest
+  steps:
+   - id:greeting
+     run: echo "message=hello welcome" >> $GITHUB_OUTPUT
+   - run: echo "output value is ${{steps.greeting.outpts.message}}"
