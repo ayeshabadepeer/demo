@@ -1,0 +1,19 @@
+name : reusable context
+
+on: 
+  workflow_call:
+   inputs:
+     environment:
+      required: true
+      type: string
+   secrets:
+     MY_SECRET:
+      required: true
+
+jobs:
+ echo-hello :
+  runs-on: ubuntu-latest
+  steps:
+   - run: echo "run in ${{inputs.environment}}"
+   - run: echo "secret is ${{secrets.MY_SECRET}}"
+     
