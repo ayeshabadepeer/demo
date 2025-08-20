@@ -1,0 +1,17 @@
+name : Environment 
+
+on: 
+ workflow_dispatch:
+  inputs:
+   TARGET_ENVIRONMENT:
+    type: environment
+    default: statging 
+    
+jobs:
+ print-env:
+  runs-on: ubuntu-latest
+  environment: ${{inputs.TARGET_ENVIRONMENT}}
+  steps:
+   - name: echo vars
+     run: echo "Vars value is ${{vars.VARS}}"
+   
